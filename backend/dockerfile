@@ -7,13 +7,13 @@ USER root
 
 WORKDIR /opt/
 
-ADD https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.87/bin/apache-tomcat-9.0.87.tar.gz .
+ADD https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.88/bin/apache-tomcat-9.0.88.tar.gz .
 
-RUN tar -xzvf apache-tomcat-9.0.87.tar.gz
+RUN tar -xzvf apache-tomcat-9.0.88.tar.gz
 
 RUN yum install java -y
 
-WORKDIR /opt/apache-tomcat-9.0.87
+WORKDIR /opt/apache-tomcat-9.0.88
 
 COPY student.war  webapps/student.war
 
